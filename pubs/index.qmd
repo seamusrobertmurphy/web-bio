@@ -1,0 +1,168 @@
+---
+title: "Publications"
+page-layout: full
+---
+
+```{r setup}
+#| warning: false
+#| message: false
+#| error: false
+#| include: false
+#| echo: false
+easypackages::packages(
+  "animation", "animate",
+  "extrafont", "ggplot2", "htmltools",
+  "janitor", "jsonlite", "lattice", "kableExtra", "kernlab",
+  "knitr","pandoc", "plotly", "RColorBrewer",
+  "rmarkdown", "tibble", "tidymodels", "tidyverse",
+  "tinytex", "tune", "useful", "webshot", "webshot2",
+  prompt = F
+  )
+  
+knitr::opts_chunk$set(
+  echo    = FALSE, 
+  message = FALSE, 
+  warning = FALSE,
+  error   = FALSE, 
+  cache   = FALSE,
+  comment = NA, 
+  tidy.opts = list(width.cutoff = 60)
+)
+options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
+sf::sf_use_s2(use_s2 = FALSE)
+```
+
+```{css}
+.publication-entry {
+  margin-bottom: 1.2rem;
+  padding: 0.8rem;
+  border-left: 3px solid #2563eb;
+  background: #f8fafc;
+  border-radius: 0.25rem;
+}
+
+.pub-citation {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+.pub-title {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.pub-authors {
+  color: #4b5563;
+  font-size: 0.8rem;
+}
+
+.pub-journal {
+  font-style: italic;
+  color: #4b5563;
+}
+
+.pub-doi {
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+}
+
+.pub-doi a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.pub-doi a:hover {
+  text-decoration: underline;
+}
+
+.section-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .publication-entry {
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pub-citation {
+    font-size: 0.8rem;
+  }
+}
+```
+
+<div class="section-header">Peer-Reviewed Publications</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">A gendered conjoint analysis of tilapia trait preference rankings among urban consumers in Zambia: Evidence to inform genetic improvement programs.</span><br>
+<span class="pub-authors">Murphy, S., Cole, S. M., Kaminski, A. M., Charo-Karisa, H., Basiita, R. K., McDougall, C., et al.</span> (2024). <span class="pub-journal">Aquaculture</span>, <em>574</em>, 741110.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2024.741110" target="_blank">10.1016/j.aquaculture.2024.741110</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Understanding gendered trait preferences: Implications for client-responsive breeding programs.</span><br>
+<span class="pub-authors">McDougall, C., Kariuki, J., Lenjiso, B. M., Pricilla, M., Mehar, M., Murphy, S., et al.</span> (2022). <span class="pub-journal">PLOS Sustainability and Transformation</span>, <em>1</em>(8), e0000025.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1371/journal.pstr.0000025" target="_blank">10.1371/journal.pstr.0000025</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Selective breeding trait preferences for farmed tilapia among low-income women and men consumers in Egypt: Implications for pro-poor and gender-responsive fish breeding programmes.</span><br>
+<span class="pub-authors">Murphy, S., Charo-Karisa, H., Rajaratnam, S., Cole, S. M., McDougall, C., et al.</span> (2020). <span class="pub-journal">Aquaculture</span>, <em>525</em>, 735042.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2020.735042" target="_blank">10.1016/j.aquaculture.2020.735042</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Gender-based market constraints to informal fish retailing: Evidence from analysis of variance and linear regression.</span><br>
+<span class="pub-authors">Murphy, S., Arora, D., Kruijssen, F., McDougall, C., & Kantor, P.</span> (2020). <span class="pub-journal">PLOS ONE</span>, <em>15</em>(3), e0229286.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1371/journal.pone.0229286" target="_blank">10.1371/journal.pone.0229286</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Employment generation in the Egyptian aquaculture value chain: Implications for meeting the Sustainable Development Goals (SDGs).</span><br>
+<span class="pub-authors">Nasr-Allah, A., Gasparatos, A., Karanja, A., Dompreh, E., Murphy, S., et al.</span> (2020). <span class="pub-journal">Aquaculture</span>, <em>520</em>, 734940.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2020.734940" target="_blank">10.1016/j.aquaculture.2020.734940</a></div>
+</div>
+</div>
+
+<div class="section-header">Book Chapters</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Fish farmers' perceptions, impacts and adaptation on/of/to climate change in Africa: The case of Egypt and Nigeria.</span><br>
+<span class="pub-authors">Adeleke, M. L., Kenawy, D., Nasr-Allah, A., Murphy, S., El-Naggar, G., & Dickson, M.</span> (2018). In F. Alves et al. (Eds.), <span class="pub-journal">Theory and Practice of Climate Adaptation</span> (pp. 269–295). Springer.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1007/978-3-319-72874-2_16" target="_blank">10.1007/978-3-319-72874-2_16</a></div>
+</div>
+</div>
+
+<div class="section-header">Reports</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Improving the livelihoods and wellbeing of women fish retailers: Success stories from the STREAMS Project in Egypt.</span><br>
+<span class="pub-authors">El Azzazy, M., Murphy, S., Nasr-Allah, A., Charo-Karisa, H., Mahmoud, M., & El-Gabaly, D.</span> (2018). WorldFish.
+<div class="pub-doi">URL: <a href="https://hdl.handle.net/20.500.12348/1751" target="_blank">hdl.handle.net/20.500.12348/1751</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Tanzanian livestock modernization initiative: Preliminary report 2015.</span><br>
+<span class="pub-authors">Kaush, A., Cleaveland, S., Omore, A., & Murphy, S.</span> (2015). CGIAR Repository, 1–38.
+<div class="pub-doi">URL: <a href="https://cgspace.cgiar.org/handle/10568/67749" target="_blank">cgspace.cgiar.org/handle/10568/67749</a></div>
+</div>
+</div>

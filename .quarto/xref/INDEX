@@ -1,0 +1,29 @@
+{
+  "mapping/index.qmd": {
+    "index.html": "f311f99f"
+  },
+  "workshops/index.qmd": {
+    "index.html": "44c7f49d"
+  },
+  "projects/index.qmd": {
+    "index.html": "8b80e981"
+  },
+  "talks/index.qmd": {
+    "index.html": "274fb211"
+  },
+  "index.qmd": {
+    "index.html": "54dd61f5"
+  },
+  "lidar/index.qmd": {
+    "index.html": "b0de7c15"
+  },
+  "verification/index.qmd": {
+    "index.html": "28ced950"
+  },
+  "teaching/index.qmd": {
+    "index.html": "076360cc"
+  },
+  "pubs/index.qmd": {
+    "index.html": "9cef710e"
+  }
+}

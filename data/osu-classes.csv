@@ -1,0 +1,8 @@
+name,id,link,last_taught,description
+Statistical Methods I,ST551,http://st551.cwick.co.nz,Fall 2017,Graduate level methods class for statisticians.
+Time Series,ST565,http://stat565.cwick.co.nz/,Winter 2016,"Graduate level class covering exploratory analysis, ARIMA modelling, forecasting and time series regression."
+Statistical Methods II,ST552,http://stat552.cwick.co.nz,Winter 2016,Graduate level regression class for statisticians.
+Methods of Data Analysis I,ST511,http://stat511.cwick.co.nz,Fall 2015,"Graduate level statistical methods class for non-statisticians with a focus on one and two sample problems, ANOVA and simple linear regression."
+Topics in Data Visualization,ST599,https://canvas.instructure.com/courses/946353,Summer 2015,"Perceptual principles, practice and critique with a focus on creation of graphics using the R package ggplot2."
+Methods of Data Analysis II,ST512,http://stat512.cwick.co.nz,Winter 2015,Graduate level statistical methods class with a focus on regression.
+Statistical Computing and Big Data,ST599,http://stat599.cwick.co.nz,Spring 2014,"Practice based class exposing students to the challenges of working with big data with a focus on teamwork, data science workflow and presentation of results."

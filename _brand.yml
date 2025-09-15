@@ -1,0 +1,77 @@
+color:
+  palette:
+    white: "#FFFFFF"
+    grey: "#6B7280"
+    light-grey: "#374151"
+    dark-grey: "#1F2937"
+    darkish-grey: "#111827"
+    forest-green: "#10B981"
+    sage-green: "#9CA3AF"
+    earth-brown: "#F59E0B"
+    blue-grey: "#94A3B8"
+    blue: "#60A5FA"
+    off-white: "#F9FAFB"
+  background: dark-grey
+  foreground: off-white
+  primary: forest-green        
+  secondary: sage-green        
+typography:
+  fonts:
+    - family: "Open Sans"
+      source: google
+      weight: [300, 400, 600, 700]
+      display: swap
+    - family: "Source Code Pro"
+      source: google
+      weight: 400
+      display: swap
+  base:
+    family: "Open Sans"
+    size: 0.8rem
+    line-height: 1.5
+  link:
+    color: blue
+  headings:
+    family: "Open Sans"
+    weight: 600
+    color: blue
+    line-height: 1.5
+  monospace:
+    family: "Source Code Pro"
+    size: 0.7em
+  monospace-inline:
+    family: "Source Code Pro"
+    background-color: darkish-grey
+    color: sage-green
+defaults:
+  bootstrap:
+    defaults:
+      navbar-bg: $brand-darkish-grey
+      navbar-fg: $brand-forest-green
+      link-color: $brand-blue
+      link-hover-color: lighten($brand-blue, 15%)
+    rules: |
+      .card .card-attribution {
+        color: $brand-blue;
+      }
+      .about-image {
+        border: 2px solid $brand-forest-green;
+      }
+      .card {
+        border-color: lighten($brand-dark-grey, 15%);
+      }
+      /* Target only listing title links, not description text */
+      .quarto-listing .listing-item .listing-title a,
+      .quarto-listing .listing-item h3 a,
+      .quarto-listing .listing-item h4 a,
+      .quarto-listing .listing-item h2 a {
+        color: $brand-blue !important;
+        text-decoration: none;
+      }
+      .quarto-listing .listing-item .listing-title a:hover,
+      .quarto-listing .listing-item h3 a:hover,
+      .quarto-listing .listing-item h4 a:hover,
+      .quarto-listing .listing-item h2 a:hover {
+        color: lighten($brand-blue, 15%) !important;
+        text-decoration: underline;
+      }

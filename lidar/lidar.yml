@@ -1,0 +1,17 @@
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">LiDAR:</span> Forest Height Analysis'
+  date: 2023-10-15
+  description: "Advanced forest structure analysis toolkit combining LiDAR and photogrammetric data for operational forest inventory planning. Features automated tree top detection algorithms, canopy height model generation, and stand structure characterization supporting efficient field plot allocation and sampling design. Includes crown delineation protocols, diameter-height relationship modeling, and accessibility analysis for optimizing field crew deployment in complex terrain environments."
+  path: https://rpubs.com/seamusmurphy/gov_sk_tree_height_variability
+  image: ../assets/PNG/LiDAR-stand-height-icon-c.png
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">LiDAR:</span> Ash Dieback Stem Mapping'
+  date: 2022-03-12
+  description: "LiDAR workflow for mapping ash dieback disease *(Hymenoscyphus fraxineus)* using high-resolution point cloud data and field validation. Combines canopy metrics with ground data to detect disease progression patterns, quantify canopy gaps from ash mortality, and map stem distribution changes over time. Features automated algorithms for identifying healthy versus declining ash trees through LiDAR-derived crown metrics, supporting targeted forest health interventions and silvicultural planning in diseased stands."
+  path: https://rpubs.com/seamusmurphy/ash-dieback
+  image: https://raw.githubusercontent.com/seamusrobertmurphy/ash-dieback-stem-map/refs/heads/main/ash-dieback-stem-map_files/figure-gfm/unnamed-chunk-5-1.png
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">LiDAR:</span> Point Cloud Processing'
+  date: 2022-02-24
+  path: https://seamusrobertmurphy.quarto.pub/lidar-forestry/01-point-cloud.html
+  description: "End-to-end workflow for processing raw airborne LiDAR point cloud data into digital terrain models and normalized canopy height products. Features comprehensive ground point classification using Cloth Simulation Filter (CSF) and Progressive Morphological Filter (PMF) algorithms, automated noise removal protocols, and high-resolution Digital Terrain Model generation. Includes individual tree detection and crown segmentation methodologies, stems-per-hectare estimation using both point-based and raster-based approaches, and LAScatalog batch processing techniques for memory-efficient handling of large-scale datasets."
+  image: https://raw.githubusercontent.com/seamusrobertmurphy/lidar-forestry/refs/heads/main/assets/PNG/unnamed-chunk-5-1.png

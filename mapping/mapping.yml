@@ -1,0 +1,29 @@
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Site Maps:</span>'
+  path: https://seamusrobertmurphy.quarto.pub/map-templates/site-map.html
+  image: ../assets/PNG/01-site-draft.png   
+  description: "Collection of site maps, including static maps designed for field operations teams and interactive maps for collective review of waypoints or target locations. Static maps were derived to ensure customizable basemaps, project boundary delineation, geographic coordinate grid and graticule cross-hairs. Legends were added using tmap functions that ensure minimum cartographic features are rendered including scale bars and north arrows."
+  date: 2024-12-15
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Locator Maps:</span>'
+  path: https://seamusrobertmurphy.quarto.pub/map-templates/locator-map.html
+  image: ../assets/PNG/03-locator-map.png
+  description: "Tools for appending an inset map showing the location of site within its national or regional landscape. Useful for report drafts or initial access recon, locator maps provide multi-scale visualization of project sites, illustrating their nearby administrative boundaries and transportation networks, reference landmarks or neighbouring city locations. Locator maps can help with stakeholder communications and staff on-boarding."
+  date: 2024-12-10
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Population Maps:</span>'
+  path: https://seamusrobertmurphy.quarto.pub/map-templates/population-map.html
+  image: ../assets/PNG/04-population-map.png
+  description: "Robust template and data source for rapid population density and demographic analysis useful for community impact assessments and initial stakeholder mapping. Visualizing census data and human settlements, population maps provide key tools at initial stages or during ex-post project evaluations."
+  date: 2024-11-20
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Watershed Maps:</span>'
+  path: https://seamusrobertmurphy.quarto.pub/map-templates/watershed-map.html
+  image: ../assets/PNG/06-watershed-3D.png
+  description: "Three-dimensional topographic delineation of the surrounding immediate watershed sub-basin. Watershed mapping provides essential resources for hydrological analysis of catchment dynamics, shared boundary, and flow direction analysis. This workflow includes tools for drainage area calculations, outlet point identification, stream network and contour visualizations, which are used to inform environmental impact studies and risk assessment between upstream and downstream features."
+  date: 2024-11-28
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Map Collection:</span>'
+  path: https://seamusrobertmurphy.quarto.pub/map-templates/
+  image: ../assets/PNG/07-map-grid.png
+  description: "Complete collection of interactive mapping templates and cartographic workflows. Includes additional specialized templates for land use analysis, biodiversity mapping, climate data visualization, and spatial statistics. Features comprehensive documentation, code repositories, and implementation guides for geospatial professionals."
+  date: 2024-12-04

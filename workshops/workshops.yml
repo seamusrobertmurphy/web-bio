@@ -1,0 +1,20 @@
+- title: "Allometry Validation"
+  author: "Instructor"
+  path: https://seamusrobertmurphy.quarto.pub/allometry-validation/
+  description: "Statistical validation and calibration procedures for allometric biomass models compliant with ART-TREES requirements for carbon registry emissions reporting. Technical guidance in model selection methodology is specifically aimed at avoiding Types 1-4 statistical errors and over-fitting. Carbon registries mandate robust model selection protocols to monitor predictive accuracy for signs of systematic bias and apply correction through hyper parameter tuning."
+  date: 2024-08-24
+- title: "Integrated Mapping of Wetland Dynamics in an Endorheic Lake Basin: Weaving Remote Sensing & Community Mapping Methods Together"
+  author: "Instructor"
+  path: https://rpubs.com/seamusmurphy/mapping-endorheic-wetland-dynamics
+  description: "Methodological workshop on integrating satellite remote sensing with participatory community mapping to monitor wetland dynamics and fishing activity in Lake Chilwa Basin, Malawi. The workflow combines a longitudinal Landsat time series (1994-2015), Sentinel-1 InSAR data, and extensive mixed-methods fieldwork to examine enforcement conflicts and management opportunities in Africa's most densely populated wetland ecosystem." 
+  date: 2020-01-01
+- title: "Monte Carlo REDD+ Uncertainty Analysis: ART-TREES Compliance Tools for Carbon Accounting & MRV Systems"
+  author: "Intstructor"
+  path: https://rpubs.com/seamusmurphy/art-trees-monte-carlo-uncertainty
+  description: "Monte Carlo simulation framework for estimating uncertainty in REDD+ emission factors and activity data for ART-TREES Standard V2.0 compliance, featuring allometric modeling, biomass estimation uncertainty, cross-validation techniques, and automated uncertainty deduction calculations with 90% confidence intervals for jurisdictional and nested carbon verification projects"
+  date: 2024-12-19
+- title: "ODK Survey Environment"
+  path: https://eu.kobotoolbox.org/#/forms/ajw7YvwXFgCgVaaAiz9Xrm/data/map
+  author: "Instructor"
+  description: "This ODK-derived field survey repository managed data collection for the Empowering Women Fish Retailers in Egypt (EWFIRE) project, sampling socioeconomic data from fish retailers across five urban centers in Sharkia governorate to assess economic constraints and value chain development opportunities informal operators."
+  date: 2019-02-04

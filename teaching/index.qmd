@@ -1,0 +1,10 @@
+---
+title: Teaching
+listing:
+  id: teaching
+  contents: teaching.yml
+  type: default
+---
+
+::: {#teaching}
+:::

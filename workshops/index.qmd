@@ -1,0 +1,13 @@
+---
+title: Workshops
+listing:
+  id: workshops
+  contents: workshops.yml
+  type: table
+  sort-ui: false
+  filter-ui: false
+  field-display-names: 
+    author: Role
+  date-format: MMM YYYY
+---
+

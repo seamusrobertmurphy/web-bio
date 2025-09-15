@@ -1,0 +1,15 @@
+{
+  "hash": "cba91630d5b87e1f79f7f5c7c712e364",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Verification\"\nlisting:\n  contents: verification.yml\n  type: grid\n  grid-columns: 2\n  sort: \"date desc\"\n  fields: [image, date, title, description]\n  field-display-names:\n    date: \"Updated\"\npage-layout: full\n---\n\n\n\n\n::: {.cell}\n<style type=\"text/css\">\n.listing-item {\n  border: 1px solid #e2e8f0;\n  border-radius: 0.5rem;\n  padding: 1.25rem;\n  margin-bottom: 1.5rem;\n  background: white;\n  transition: box-shadow 0.2s ease;\n}\n\n.listing-item:hover {\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n}\n\n.listing-title {\n  font-size: 1.1rem;\n  line-height: 1.4;\n  margin-bottom: 0.75rem;\n}\n\n.listing-title a {\n  text-decoration: none;\n  color: #1f2937;\n}\n\n.listing-title a:hover {\n  color: #2563eb;\n}\n\n.listing-description {\n  font-size: 0.9rem;\n  line-height: 1.5;\n  color: #4b5563;\n}\n\n.listing-date {\n  font-size: 0.8rem;\n  color: #6b7280;\n  margin-bottom: 0.5rem;\n}\n\n.listing-image {\n  margin-bottom: 1rem;\n}\n\n.listing-image img {\n  width: 100%;\n  height: 180px;\n  object-fit: cover;\n  border-radius: 0.25rem;\n}\n\n@media (max-width: 768px) {\n  .quarto-listing-grid .listing-item {\n    grid-column: span 1;\n  }\n}\n</style>\n:::\n\n\nThis page showcases verification tools and methodologies I've developed for carbon offset project assessment and compliance.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

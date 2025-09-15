@@ -1,0 +1,17 @@
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">VM0048:</span> Jurisdictional REDD+ Methodology'
+  path: https://seamusrobertmurphy.quarto.pub/vm0048/
+  image: ../assets/PNG/deforisk-icon.png   
+  description: "Comprehensive guide to Verra's VM0048 consolidated methodology and VMD0055-compliant emissions reporting. Features development of emissions baseline using Google Earth Engine tools and Landsat Collection-2 anaysis-ready-data, jurisdictional deforestation risk mapping with spatial covariates analysis, and VMD0055-compliant leakage belt delineation protocols and checks for densely population landscapes."
+  date: 2025-01-04
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">VM0047:</span> ARR Project Feasibility'
+  path: https://rpubs.com/seamusmurphy/land-eligibility-hazard-degradation-check-VM0047
+  image: ../assets/PNG/VM0047-matrix.png  
+  description: "Feasibility assessment framework for Afforestation, Reforestation, and Revegetation (ARR) projects under VM0047 methodology. This resource provides standardized protocol for evaluating land degradation, forest change detection algorithms, and baseline establishment procedures, including data processing workflows for satellite imagery analysis and soil carbon stock potential to support project developers in initial feasibility screening."
+  date: 2024-10-17
+  
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">VM0010:</span> IFM Reporting Template'
+  path: https://seamusrobertmurphy.github.io/VM0010-starter-template/
+  description: "Reporting template for Improved Forest Management (IFM) projects under VM0010 methodology. Provides standardized procedures for forest inventory data collection, carbon stock calculations, emission reduction quantification, and MRV reporting requirements. Includes field measurement protocols, allometric equation selection guidance, statistical sampling design, and automated calculation templates ensuring VCS compliance for commercial forest carbon projects."
+  image: ../assets/PNG/VM0010-icon.png
+  date: 2024-11-04

@@ -1,0 +1,25 @@
+{
+  "listingMap": {
+    "mapping/index.qmd": [
+      "mapping.yml"
+    ],
+    "workshops/index.qmd": [
+      "workshops.yml"
+    ],
+    "projects/index.qmd": [
+      "projects.yml"
+    ],
+    "talks/index.qmd": [
+      "talks.yml"
+    ],
+    "lidar/index.qmd": [
+      "lidar.yml"
+    ],
+    "verification/index.qmd": [
+      "verification.yml"
+    ],
+    "teaching/index.qmd": [
+      "teaching.yml"
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+/*-- scss:defaults --*/
+/* Brand colors */
+$brand-blue: #2563eb;
+$brand-slate: #64748b;
+$brand-light-blue: #f8fafc;
+$brand-light-grey: #e2e8f0;
+$brand-white: #ffffff;
+$brand-blue-grey: #475569;
+$brand-sage-green: #10b981;
+
+/* Typography variables */
+$font-size-root: 14px;
+$toc-font-size: 11px;
+$code-font-size: 10px;
+$font-family-sans-serif: "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+/* Code styling variables */
+//$code-block-border-left: #2d1283;
+
+/* Colors */
+$body-bg: #FFFFFF;
+$body-color: rgb(55, 58, 60);
+$link-color: rgb(39, 128, 227);
+
+/*-- scss:rules --*/
+
+/* =================================== */
+/* GENERAL LISTING STYLES (for teaching) */
+/* =================================== */
+.listing-title {
+  font-size: 0.85rem !important;  /* Reduced title size */
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.listing-item {
+  font-size: 0.7rem;  /* Smaller base font for listings */
+}
+
+.listing-description {
+  font-size: 0.7rem;  /* Smaller description text */
+  line-height: 1.2;
+}
+
+.listing-date {
+  font-size: 0.8rem;  /* Smaller date text */
+}
+
+/* =================================== */
+/* PUBLICATIONS-SPECIFIC STYLES */
+/* =================================== */
+/* Target publications page specifically by body class or page */
+body.quarto-listing .listing-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 3px solid $brand-blue;
+  background: $brand-light-blue;
+  font-size: 0.7rem;  /* Keep consistent with your general settings */
+}
+
+/* Override for publications page only */
+[data-quarto-source="pubs/index.qmd"] .listing-item,
+.publications .listing-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 3px solid $brand-blue;
+  background: $brand-light-blue;
+  font-size: 0.7rem;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-title,
+.publications .listing-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem !important;
+  line-height: 1.5;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-author,
+.publications .listing-author {
+  color: $brand-slate;
+  margin-bottom: 0.25rem;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-description,
+.publications .listing-description {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-categories,
+.publications .listing-categories {
+  margin-top: 0.5rem;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-categories .listing-category,
+.publications .listing-categories .listing-category {
+  background: $brand-light-grey;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+}
+
+/* DOI/URL Link Styling for publications only */
+[data-quarto-source="pubs/index.qmd"] .listing-item a,
+.publications .listing-item a {
+  color: $brand-blue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-item a:hover,
+.publications .listing-item a:hover {
+  text-decoration: underline;
+}
+
+/* =================================== */
+/* TEACHING-SPECIFIC STYLES */
+/* =================================== */
+#teaching .listing-title,
+.teaching-listing .listing-title {
+  font-size: 0.85rem !important;  /* Reduced title size */
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+#teaching .listing-item,
+.teaching-listing .listing-item {
+  font-size: 0.7rem;  /* Smaller base font for listings */
+  /* No special background or borders for teaching - clean minimal look */
+}
+
+#teaching .listing-description,
+.teaching-listing .listing-description {
+  font-size: 0.7rem;  /* Smaller description text */
+  line-height: 1.2;
+}
+
+#teaching .listing-date,
+.teaching-listing .listing-date {
+  font-size: 0.8rem;  /* Smaller date text */
+}
+
+/* Additional compact settings for teaching */
+#teaching .listing-item,
+.teaching-listing .listing-item {
+  margin-bottom: 1.2rem;  /* Tighter spacing for teaching */
+}
+
+#teaching .listing-item-img-placeholder,
+.teaching-listing .listing-item-img-placeholder {
+  font-size: 0.8rem;
+}
+
+/* Teaching responsive adjustments */
+@media (max-width: 768px) {
+  #teaching .listing-description,
+  .teaching-listing .listing-description {
+    font-size: 0.8rem;
+  }
+}
+
+/* Card Typography */
+.card {
+  font-size: 0.9rem;  /* Reduce card text */
+}
+
+.card h5 {
+  font-size: 1.0em !important;  /* Reduced from 1.1em */
+  font-family: "Open Sans";
+  line-height: 1.3;
+}
+
+.card-title {
+  font-size: 1.0rem !important;
+}
+
+.card-text {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Navbar Typography */
+.navbar-brand {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar-nav a {
+  color: $brand-white;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active {
+  color: $brand-blue-grey;
+  background-color: $brand-sage-green;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card h5 {
+    font-size: 0.95em !important;
+  }
+  
+  .listing-description {
+    font-size: 0.8rem;
+  }
+  
+  /* Publications responsive */
+  #pubs .listing-item,
+  .publications-listing .listing-item {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  #pubs .listing-title,
+  .publications-listing .listing-title {
+    font-size: 0.8rem !important;
+  }
+  
+  #pubs .listing-description,
+  .publications-listing .listing-description {
+    font-size: 0.65rem;
+  }
+}

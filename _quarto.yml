@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "Séamus Murphy"
+  search: false
+  favicon: assets/PNG/favicon.png
+  open-graph: 
+    image: assets/PNG/profile.jpg
+  page-footer:
+    left: "[Source](https://github.com/seamusrobertmurphy/bio)"
+  navbar:
+    id: top-nav
+    pinned: true
+    toggle-position: right
+    right:
+      - teaching/index.qmd
+      - lidar/index.qmd
+      - mapping/index.qmd
+      - verification/index.qmd
+      - projects/index.qmd
+      - pubs/index.qmd
+    tools:
+    - icon: github
+      text: GitHub
+      href: https://github.com/seamusrobertmurphy/
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/seamusrobertmurphy
+
+format:
+  html:
+    theme: 
+      - default
+      - styles.scss
+      - _brand.yml
