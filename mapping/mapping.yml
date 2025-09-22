@@ -22,8 +22,12 @@
   description: "Three-dimensional topographic delineation of the surrounding immediate watershed sub-basin. Watershed mapping provides essential resources for hydrological analysis of catchment dynamics, shared boundary, and flow direction analysis. This workflow includes tools for drainage area calculations, outlet point identification, stream network and contour visualizations, which are used to inform environmental impact studies and risk assessment between upstream and downstream features."
   date: 2024-11-28
 
-- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Map Collection:</span>'
-  path: https://seamusrobertmurphy.quarto.pub/map-templates/
-  image: ../assets/PNG/07-map-grid.png
-  description: "Complete collection of interactive mapping templates and cartographic workflows. Includes additional specialized templates for land use analysis, biodiversity mapping, climate data visualization, and spatial statistics. Features comprehensive documentation, code repositories, and implementation guides for geospatial professionals."
-  date: 2024-12-04
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Riparian Maps:</span>'
+  path: ./stream-map.qmd
+  image: https://raw.githubusercontent.com/seamusrobertmurphy/map-templates/refs/heads/main/assets/MAP/stream_map_high_b.png
+  description: >
+    Riparian map including DEM conditioning by breaching and filling depressions and flats, and stream 
+    delineation using flow direction and accumulation rendered in 3D over elevation data designed 
+    to support wetland conservation, streambank stabilization projects, and riparian vegetation
+    management strategies.
+  date: 2025-09-20

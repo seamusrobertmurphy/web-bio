@@ -1,7 +1,4 @@
 - source: project
-  netlify:
-    - id: ce87a8f1-86e0-482e-8c44-44f02f7605b7
-      url: https://www.cwick.co.nz
   quarto-pub:
     - id: 56e37af4-8314-4c03-aaa3-2484ec71516d
       url: https://seamusrobertmurphy.quarto.pub/bio

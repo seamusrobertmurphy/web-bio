@@ -28,6 +28,10 @@ website:
       text: LinkedIn
       href: https://linkedin.com/in/seamusrobertmurphy
 
+brand:
+  light: _brand-light.yml
+  dark: _brand.yml
+  
 format:
   html:
     theme: 
