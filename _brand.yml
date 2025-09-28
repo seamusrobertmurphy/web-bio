@@ -1,16 +1,18 @@
 color:
   palette:
     white: "#FFFFFF"
-    grey: "#6B7280"
+    grey: "#9CA3AF"
     light-grey: "#374151"
-    dark-grey: "#1F2937"
-    darkish-grey: "#111827"
+    dark-grey: "#111827"
+    darkish-grey: "#0F172A"
     forest-green: "#10B981"
-    sage-green: "#9CA3AF"
-    earth-brown: "#F59E0B"
-    blue-grey: "#94A3B8"
+    sage-green: "#6EE7B7"
+    earth-brown: "#FBBF24"
+    blue-grey: "#64748B"
     blue: "#60A5FA"
-    off-white: "#F9FAFB"
+    off-white: "#F8FAFC"
+    card-bg: "#1E293B"
+    border-dark: "#334155"
   background: dark-grey
   foreground: off-white
   primary: forest-green        
@@ -34,7 +36,7 @@ typography:
   headings:
     family: "Open Sans"
     weight: 600
-    color: blue
+    color: sage-green
     line-height: 1.5
   monospace:
     family: "Source Code Pro"
@@ -47,19 +49,48 @@ defaults:
   bootstrap:
     defaults:
       navbar-bg: $brand-darkish-grey
-      navbar-fg: $brand-forest-green
+      navbar-fg: $brand-sage-green
       link-color: $brand-blue
       link-hover-color: lighten($brand-blue, 15%)
+      body-bg: $brand-dark-grey
+      body-color: $brand-off-white
+      card-bg: $brand-card-bg
+      border-color: $brand-border-dark
     rules: |
+      body {
+        background-color: $brand-dark-grey !important;
+        color: $brand-off-white !important;
+      }
+      
+      .card {
+        background-color: $brand-card-bg !important;
+        border-color: $brand-border-dark !important;
+        color: $brand-off-white !important;
+      }
+      
       .card .card-attribution {
         color: $brand-blue;
       }
+      
       .about-image {
         border: 2px solid $brand-forest-green;
       }
-      .card {
-        border-color: lighten($brand-dark-grey, 15%);
+      
+      /* Listing items for dark theme */
+      .listing-item {
+        background-color: $brand-card-bg !important;
+        border-color: $brand-border-dark !important;
+        color: $brand-off-white !important;
       }
+      
+      /* Publications styling for dark theme */
+      [data-quarto-source="pubs/index.qmd"] .listing-item,
+      .publications .listing-item {
+        background: $brand-card-bg !important;
+        border-left: 3px solid $brand-forest-green !important;
+        color: $brand-off-white !important;
+      }
+      
       /* Target only listing title links, not description text */
       .quarto-listing .listing-item .listing-title a,
       .quarto-listing .listing-item h3 a,
@@ -68,10 +99,75 @@ defaults:
         color: $brand-blue !important;
         text-decoration: none;
       }
+      
       .quarto-listing .listing-item .listing-title a:hover,
       .quarto-listing .listing-item h3 a:hover,
       .quarto-listing .listing-item h4 a:hover,
       .quarto-listing .listing-item h2 a:hover {
         color: lighten($brand-blue, 15%) !important;
         text-decoration: underline;
+      }
+      
+      /* Dark theme text colors */
+      .listing-description {
+        color: $brand-grey !important;
+      }
+      
+      .listing-author {
+        color: $brand-sage-green !important;
+      }
+      
+      .listing-date {
+        color: $brand-grey !important;
+      }
+      
+      /* Category tags for dark theme */
+      .listing-categories .listing-category {
+        background: $brand-darkish-grey !important;
+        color: $brand-sage-green !important;
+        border: 1px solid $brand-border-dark !important;
+      }
+      
+      /* Navbar adjustments */
+      .navbar {
+        background-color: $brand-darkish-grey !important;
+      }
+      
+      .navbar-nav .nav-link {
+        color: $brand-off-white !important;
+      }
+      
+      .navbar-nav .nav-link.active {
+        color: $brand-dark-grey !important;
+        background-color: $brand-sage-green !important;
+      }
+      
+      /* General text elements */
+      h1, h2, h3, h4, h5, h6 {
+        color: $brand-sage-green !important;
+      }
+      
+      p, .card-text {
+        color: $brand-off-white !important;
+      }
+      
+      /* Code blocks */
+      pre, code {
+        background-color: $brand-darkish-grey !important;
+        color: $brand-sage-green !important;
+        border: 1px solid $brand-border-dark !important;
+      }
+      
+      /* Tables */
+      .table {
+        color: $brand-off-white !important;
+      }
+      
+      .table th {
+        border-color: $brand-border-dark !important;
+        background-color: $brand-card-bg !important;
+      }
+      
+      .table td {
+        border-color: $brand-border-dark !important;
       }

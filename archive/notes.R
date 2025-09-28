@@ -583,3 +583,11 @@ knitr::opts_chunk$set(
 options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
 sf::sf_use_s2(use_s2 = FALSE)
 ```
+
+
+format:
+  html:
+    theme: 
+      - default
+      - styles.scss
+      - _brand.yml

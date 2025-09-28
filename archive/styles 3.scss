@@ -1,0 +1,463 @@
+/*-- scss:defaults --*/
+/* Brand colors */
+$brand-blue: #2563eb;
+$brand-slate: #64748b;
+$brand-light-blue: #ADD8E6;
+$brand-light-grey: #e2e8f0;
+$brand-white: #ffffff;
+$brand-blue-grey: #475569;
+$brand-sage-green: #10b981;
+
+/* Typography variables */
+$font-size-root: 14px;
+$toc-font-size: 11px;
+$code-font-size: 10px;
+$font-family-sans-serif: "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+/* Code styling variables */
+//$code-block-border-left: #2d1283;
+
+/* Colors */
+$body-bg: #ffffff;
+$body-color: rgb(55, 58, 60);
+$link-color: rgb(39, 128, 227);
+
+/*-- scss:rules --*/
+
+/* =================================== */
+/*  GENERAL LISTING STYLES (teaching)  */
+/* =================================== */
+.listing-title {
+  font-size: 0.85rem !important;  /* Reduced title size */
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.listing-item {
+  font-size: 0.7rem;  /* Smaller base font for listings */
+}
+
+.listing-description {
+  font-size: 0.7rem;  /* Smaller description text */
+  line-height: 1.2;
+}
+
+.listing-date {
+  font-size: 0.8rem;  /* Smaller date text */
+}
+
+/* =================================== */
+/* PUBLICATIONS-SPECIFIC STYLES        */
+/* =================================== */
+/* Target publications page specifically by body class or page */
+body.quarto-listing .listing-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 3px solid $brand-blue;
+  background: $brand-light-blue;
+  font-size: 0.7rem;  /* Keep consistent with your general settings */
+}
+
+/* Override for publications page only */
+[data-quarto-source="pubs/index.qmd"] .listing-item,
+.publications .listing-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 3px solid $brand-blue;
+  background: $brand-light-blue;
+  font-size: 0.7rem;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-title,
+.publications .listing-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem !important;
+  line-height: 1.5;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-author,
+.publications .listing-author {
+  color: $brand-slate;
+  margin-bottom: 0.25rem;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-description,
+.publications .listing-description {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-categories,
+.publications .listing-categories {
+  margin-top: 0.5rem;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-categories .listing-category,
+.publications .listing-categories .listing-category {
+  background: $brand-light-grey;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+}
+
+/* DOI/URL Link Styling for publications only */
+[data-quarto-source="pubs/index.qmd"] .listing-item a,
+.publications .listing-item a {
+  color: $brand-blue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+[data-quarto-source="pubs/index.qmd"] .listing-item a:hover,
+.publications .listing-item a:hover {
+  text-decoration: underline;
+}
+
+/* =================================== */
+/* TEACHING-SPECIFIC STYLES */
+/* =================================== */
+#teaching .listing-title,
+.teaching-listing .listing-title {
+  font-size: 0.85rem !important;  /* Reduced title size */
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+#teaching .listing-item,
+.teaching-listing .listing-item {
+  font-size: 0.7rem;  /* Smaller base font for listings */
+  /* No special background or borders for teaching - clean minimal look */
+}
+
+#teaching .listing-description,
+.teaching-listing .listing-description {
+  font-size: 0.7rem;  /* Smaller description text */
+  line-height: 1.2;
+}
+
+#teaching .listing-date,
+.teaching-listing .listing-date {
+  font-size: 0.8rem;  /* Smaller date text */
+}
+
+/* Additional compact settings for teaching */
+#teaching .listing-item,
+.teaching-listing .listing-item {
+  margin-bottom: 1.2rem;  /* Tighter spacing for teaching */
+}
+
+#teaching .listing-item-img-placeholder,
+.teaching-listing .listing-item-img-placeholder {
+  font-size: 0.8rem;
+}
+
+/* Teaching responsive adjustments */
+@media (max-width: 768px) {
+  #teaching .listing-description,
+  .teaching-listing .listing-description {
+    font-size: 0.8rem;
+  }
+}
+
+/* Card Typography */
+.card {
+  font-size: 0.9rem;  /* Reduce card text */
+}
+
+.card h5 {
+  font-size: 1.0em !important;  /* Reduced from 1.1em */
+  font-family: "Open Sans";
+  line-height: 1.3;
+}
+
+.card-title {
+  font-size: 1.0rem !important;
+}
+
+.card-text {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Navbar Typography */
+.navbar-brand {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar-nav a {
+  color: $brand-white;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active {
+  color: $brand-blue-grey;
+  background-color: $brand-sage-green;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card h5 {
+    font-size: 0.95em !important;
+  }
+  
+  .listing-description {
+    font-size: 0.8rem;
+  }
+  
+  /* Publications responsive */
+  #pubs .listing-item,
+  .publications-listing .listing-item {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  #pubs .listing-title,
+  .publications-listing .listing-title {
+    font-size: 0.8rem !important;
+  }
+  
+  #pubs .listing-description,
+  .publications-listing .listing-description {
+    font-size: 0.65rem;
+  }
+}
+
+
+
+
+// ================ //
+
+---
+title: "Publications"
+page-layout: full
+---
+
+```{r setup}
+#| warning: false
+#| message: false
+#| error: false
+#| include: false
+#| echo: false
+easypackages::packages(
+  "animation", "animate",
+  "extrafont", "ggplot2", "htmltools",
+  "janitor", "jsonlite", "lattice", "kableExtra", "kernlab",
+  "knitr","pandoc", "plotly", "RColorBrewer",
+  "rmarkdown", "tibble", "tidymodels", "tidyverse",
+  "tinytex", "tune", "useful", "webshot", "webshot2",
+  prompt = F
+  )
+  
+knitr::opts_chunk$set(
+  echo    = FALSE, 
+  message = FALSE, 
+  warning = FALSE,
+  error   = FALSE, 
+  cache   = FALSE,
+  comment = NA, 
+  tidy.opts = list(width.cutoff = 60)
+)
+options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
+sf::sf_use_s2(use_s2 = FALSE)
+```
+
+```{css}
+.publication-entry {
+  margin-bottom: 1.2rem;
+  padding: 0.8rem;
+  border-left: 3px solid #2563eb;
+  background: #f8fafc;
+  border-radius: 0.25rem;
+}
+
+.pub-citation {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+.pub-title {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.pub-authors {
+  color: #4b5563;
+  font-size: 0.8rem;
+}
+
+.pub-journal {
+  font-style: italic;
+  color: #4b5563;
+}
+
+.pub-doi {
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+}
+
+.pub-doi a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.pub-doi a:hover {
+  text-decoration: underline;
+}
+
+.section-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .publication-entry {
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pub-citation {
+    font-size: 0.8rem;
+  }
+}
+```
+
+<div class="section-header">Peer-Reviewed Publications</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">A gendered conjoint analysis of tilapia trait preference rankings among urban consumers in Zambia: Evidence to inform genetic improvement programs.</span><br>
+<span class="pub-authors">Murphy, S., Cole, S. M., Kaminski, A. M., Charo-Karisa, H., Basiita, R. K., McDougall, C., et al.</span> (2024). <span class="pub-journal">Aquaculture</span>, <em>574</em>, 741110.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2024.741110" target="_blank">10.1016/j.aquaculture.2024.741110</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Understanding gendered trait preferences: Implications for client-responsive breeding programs.</span><br>
+<span class="pub-authors">McDougall, C., Kariuki, J., Lenjiso, B. M., Pricilla, M., Mehar, M., Murphy, S., et al.</span> (2022). <span class="pub-journal">PLOS Sustainability and Transformation</span>, <em>1</em>(8), e0000025.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1371/journal.pstr.0000025" target="_blank">10.1371/journal.pstr.0000025</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Selective breeding trait preferences for farmed tilapia among low-income women and men consumers in Egypt: Implications for pro-poor and gender-responsive fish breeding programmes.</span><br>
+<span class="pub-authors">Murphy, S., Charo-Karisa, H., Rajaratnam, S., Cole, S. M., McDougall, C., et al.</span> (2020). <span class="pub-journal">Aquaculture</span>, <em>525</em>, 735042.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2020.735042" target="_blank">10.1016/j.aquaculture.2020.735042</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Gender-based market constraints to informal fish retailing: Evidence from analysis of variance and linear regression.</span><br>
+<span class="pub-authors">Murphy, S., Arora, D., Kruijssen, F., McDougall, C., & Kantor, P.</span> (2020). <span class="pub-journal">PLOS ONE</span>, <em>15</em>(3), e0229286.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1371/journal.pone.0229286" target="_blank">10.1371/journal.pone.0229286</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Employment generation in the Egyptian aquaculture value chain: Implications for meeting the Sustainable Development Goals (SDGs).</span><br>
+<span class="pub-authors">Nasr-Allah, A., Gasparatos, A., Karanja, A., Dompreh, E., Murphy, S., et al.</span> (2020). <span class="pub-journal">Aquaculture</span>, <em>520</em>, 734940.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2020.734940" target="_blank">10.1016/j.aquaculture.2020.734940</a></div>
+</div>
+</div>
+
+<div class="section-header">Book Chapters</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Fish farmers' perceptions, impacts and adaptation on/of/to climate change in Africa: The case of Egypt and Nigeria.</span><br>
+<span class="pub-authors">Adeleke, M. L., Kenawy, D., Nasr-Allah, A., Murphy, S., El-Naggar, G., & Dickson, M.</span> (2018). In F. Alves et al. (Eds.), <span class="pub-journal">Theory and Practice of Climate Adaptation</span> (pp. 269–295). Springer.
+<div class="pub-doi">DOI: <a href="https://doi.org/10.1007/978-3-319-72874-2_16" target="_blank">10.1007/978-3-319-72874-2_16</a></div>
+</div>
+</div>
+
+<div class="section-header">Reports</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Improving the livelihoods and wellbeing of women fish retailers: Success stories from the STREAMS Project in Egypt.</span><br>
+<span class="pub-authors">El Azzazy, M., Murphy, S., Nasr-Allah, A., Charo-Karisa, H., Mahmoud, M., & El-Gabaly, D.</span> (2018). WorldFish.
+<div class="pub-doi">URL: <a href="https://hdl.handle.net/20.500.12348/1751" target="_blank">hdl.handle.net/20.500.12348/1751</a></div>
+</div>
+</div>
+
+<div class="publication-entry">
+<div class="pub-citation">
+<span class="pub-title">Tanzanian livestock modernization initiative: Preliminary report 2015.</span><br>
+<span class="pub-authors">Kaush, A., Cleaveland, S., Omore, A., & Murphy, S.</span> (2015). CGIAR Repository, 1–38.
+<div class="pub-doi">URL: <a href="https://cgspace.cgiar.org/handle/10568/67749" target="_blank">cgspace.cgiar.org/handle/10568/67749</a></div>
+</div>
+</div>
+
+
+- title: "A gendered conjoint analysis of tilapia trait preference rankings among urban consumers in Zambia: Evidence to inform genetic improvement programs"
+  author: "Murphy, S., Cole, S. M., Kaminski, A. M., Charo-Karisa, H., Basiita, R. K., McDougall, C., Kakwasha, K., Mulilo, T., Rajaratnam, S., & Mekkawy, W."
+  date: "2024"
+  description: "*Aquaculture*, *574*, Article 741110. https://doi.org/10.1016/j.aquaculture.2024.741110"
+  url: "https://doi.org/10.1016/j.aquaculture.2024.741110"
+  categories: [Aquaculture, Consumer Preferences, Farmed Fish Morphology, Gender-Responsive Breeding Programs, Pairwise Ranking Method, Zambia, Gender Analysis, Intra-Household Nutrition]
+
+- title: "Understanding gendered trait preferences: Implications for client-responsive breeding programs"
+  author: "McDougall, C., Kariuki, J., Lenjiso, B. M., Pricilla, M., Mehar, M., Murphy, S., Teeken, B., Akester, M. J., Benzie, J., Galie, A., Kulakow, P., Mekkawy, W., Nkengla-Asi, L., Ojango, J. M. K., Tumuhimbise, R., Umwimana, B., & Orr, A."
+  date: "2022"
+  description: "*PLOS Sustainability and Transformation*, *1*(8), Article e0000025"
+  url: "https://doi.org/10.1371/journal.pstr.0000025"
+  categories: [Breeding Programs, Gender Studies, Agricultural Development]
+  image: https://media.licdn.com/dms/image/sync/v2/C5627AQGcA_mwSqMBIw/articleshare-shrink_800/B56ZZV90t6GcAI-/0/1745198993006?e=1758376800&v=beta&t=IVH-Uwhuqfh3_7zo53NnC1UCQyzDee8qPryWTzXLUjs
+
+- title: "Selective Breeding Trait Preferences for Farmed Tilapia among Low-Income Women and Men Consumers in Egypt: Implications for pro-Poor and Gender-Responsive Fish Breeding Programmes"
+  author: "Murphy, S., Charo-Karisa, H., Rajaratnam, S., Cole, S. M., McDougall, C., Nasr-Allah, A., Kenawy, D., Zead, M. Y. A., van Brakel, M., & Banks, L."
+  date: "2020"
+  description: "*Aquaculture*, *525*, Article 735042"
+  url: "https://doi.org/10.1016/j.aquaculture.2020.735042"
+  categories: [Aquaculture, Gender Analysis, Egypt, Consumer Preferences]
+
+- title: "Gender-Based Market Constraints to Informal Fish Retailing: Evidence from Analysis of Variance and Linear Regression"
+  author: "Murphy, S., Arora, D., Kruijssen, F., McDougall, C., & Kantor, P."
+  date: "2020"
+  description: "*PLOS ONE*, *15*(3), Article e0229286"
+  url: "https://doi.org/10.1371/journal.pone.0229286"
+  categories: [Market Analysis, Gender Studies, Fish Retail]
+
+- title: "Employment Generation in the Egyptian Aquaculture Value Chain: Implications for Meeting the Sustainable Development Goals (SDGs)"
+  author: "Nasr-Allah, A., Gasparatos, A., Karanja, A., Dompreh, E., Murphy, S., Rossignoli, C. M., Philips, M., & Charo-Karisa, H."
+  date: "2020"
+  description: "*Aquaculture*, *520*, Article 734940"
+  url: "https://doi.org/10.1016/j.aquaculture.2020.734940"
+  categories: [Value Chain, SDGs, Employment, Egypt]
+
+- title: "Fish Farmers' Perceptions, Impacts and Adaptation on/of/to Climate Change in Africa: The Case of Egypt and Nigeria"
+  author: "Adeleke, M. L., Kenawy, D., Nasr-Allah, A., Murphy, S., El-Naggar, G., & Dickson, M."
+  date: "2018"
+  description: "In F. Alves, W. Leal Filho, & U. Azeiteiro (Eds.), *Theory and Practice of Climate Adaptation* (pp. 269–295). Springer International Publishing"
+  url: "https://doi.org/10.1007/978-3-319-72874-2_16"
+  categories: [Climate Adaptation, Africa, Aquaculture]
+
+- title: "Improving the Livelihoods and Wellbeing of Women Fish Retailers: Success Stories from the STREAMS Project in Egypt"
+  author: "El Azzazy, M., Murphy, S., Nasr-Allah, A., Charo-Karisa, H., Mahmoud, M., & El-Gabaly, D."
+  date: "2018"
+  description: "WorldFish"
+  url: "https://hdl.handle.net/20.500.12348/1751"
+  categories: [Gender Studies, Livelihoods, Egypt, Fish Retail]
+
+- title: "Tanzanian Livestock Modernization Initiative: Preliminary Report 2015"
+  author: "Kaush, A., Cleaveland, S., Omore, A., & Murphy, S."
+  date: "2015"
+  description: "*CGIAR Repository of Agricultural Research Outputs*, 1–38"
+  url: "https://cgspace.cgiar.org/handle/10568/67749"
+  categories: [Livestock, Tanzania, Development]
+
+
+next we need restrict the size of image icons displaying in the listing grids. Currently, the images are rendering larger than the extent of the box and are taking up more space than the text description. We need standardize the size of all images in all listings. here are three listing yaml files, what other files od you need? 

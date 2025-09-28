@@ -4,12 +4,6 @@
   description: "Collection of site maps, including static maps designed for field operations teams and interactive maps for collective review of waypoints or target locations. Static maps were derived to ensure customizable basemaps, project boundary delineation, geographic coordinate grid and graticule cross-hairs. Legends were added using tmap functions that ensure minimum cartographic features are rendered including scale bars and north arrows."
   date: 2024-12-15
 
-- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Locator Maps:</span>'
-  path: https://seamusrobertmurphy.quarto.pub/map-templates/locator-map.html
-  image: ../assets/PNG/03-locator-map.png
-  description: "Tools for appending an inset map showing the location of site within its national or regional landscape. Useful for report drafts or initial access recon, locator maps provide multi-scale visualization of project sites, illustrating their nearby administrative boundaries and transportation networks, reference landmarks or neighbouring city locations. Locator maps can help with stakeholder communications and staff on-boarding."
-  date: 2024-12-10
-
 - title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Population Maps:</span>'
   path: https://seamusrobertmurphy.quarto.pub/map-templates/population-map.html
   image: ../assets/PNG/04-population-map.png
@@ -23,7 +17,7 @@
   date: 2024-11-28
 
 - title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Riparian Maps:</span>'
-  path: ./stream-map.qmd
+  path: https://seamusrobertmurphy.quarto.pub/map-templates/stream-map.html
   image: https://raw.githubusercontent.com/seamusrobertmurphy/map-templates/refs/heads/main/assets/MAP/stream_map_high_b.png
   description: >
     Riparian map including DEM conditioning by breaching and filling depressions and flats, and stream 
@@ -31,3 +25,26 @@
     to support wetland conservation, streambank stabilization projects, and riparian vegetation
     management strategies.
   date: 2025-09-20
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Climate Maps:</span>'
+  path: https://seamusrobertmurphy.quarto.pub/map-templates/climate-map.html
+  image: https://raw.githubusercontent.com/seamusrobertmurphy/forest-fire-risk-cffdrs/main/assets/PNG/temp.png
+  description: >
+    Climate maps featuring mean daily temperature (°C), precipitation (mm³/day), relative humidity (%), 
+    and wind speed (m/s) derived from Environment and Climate Change Canada weather station data using Inverse 
+    Distance Weighting interpolation. Station data aggregated over specified periods and spatially interpolated 
+    to continuous raster surfaces, supporting wildfire risk assessment, agricultural planning, environmental 
+    monitoring, and climate impact studies for operational decision-making.
+  categories: [Mapping, Fieldwork, Operations]
+  date: 2025-08-01
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">Topography Maps:</span>'
+  path: ./topo-map.qmd
+  image: https://raw.githubusercontent.com/seamusrobertmurphy/map-templates/refs/heads/main/assets/MAP/aspect_chilwa_2d.png
+  description: >
+    Topographic maps featuring classified slope percentages and cardinal aspects derived from conditioned DEM data. 
+    These maps support terrain assessment, erosion risk evaluation, slope stability analysis, and 
+    site suitability planning for infrastructure development, agricultural practices, and environmental 
+    management operations.
+  categories: [Mapping, Fieldwork, Operations]
+  date: 2025-08-01

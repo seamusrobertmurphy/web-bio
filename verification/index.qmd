@@ -3,7 +3,7 @@ title: "Verification"
 listing:
   contents: verification.yml
   type: grid
-  grid-columns: 2
+  grid-columns: 3
   sort: "date desc"
   fields: [image, date, title, description]
   field-display-names:

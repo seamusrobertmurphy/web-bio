@@ -37,4 +37,5 @@ format:
     theme: 
       - default
       - styles.scss
-      - _brand.yml
+      - _brand.yml 
+      
