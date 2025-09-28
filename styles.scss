@@ -101,20 +101,30 @@ $link-color: rgb(39, 128, 227);
 }
 
 /* Grid layout adjustments - smaller, centered images */
-.quarto-listing-grid .listing-image img {
+.quarto-listing-grid .listing-image img,
+[data-quarto-source*="verification"] .listing-image img,
+[data-quarto-source*="mapping"] .listing-image img {
   height: 120px !important;
   max-width: 200px !important;
   margin: 0 auto !important;
   display: block !important;
+  object-fit: cover !important;
+  border-radius: 0.25rem !important;
 }
 
 /* Default listing layout adjustments - side-by-side layout */
-.quarto-listing-default .listing-image img {
+.quarto-listing-default .listing-image img,
+[data-quarto-source*="projects"] .listing-image img,
+[data-quarto-source*="lidar"] .listing-image img,
+[data-quarto-source*="teaching"] .listing-image img {
   height: 150px !important;
   width: 200px !important;
-  float: left;
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
+  float: left !important;
+  margin-right: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  object-fit: cover !important;
+  border-radius: 0.375rem !important;
+  border: 1px solid #e5e7eb !important;
 }
 
 /* Mobile responsive */
