@@ -36,18 +36,17 @@ $link-color: rgb(39, 128, 227);
 }
 
 /* Standardized title styling - BLUE for all pages */
-.listing-title,
 .listing-title a {
   font-size: 0.9rem;
   line-height: 1.4;
   font-weight: 600;
-  color: $brand-blue;
+  color: $brand-blue !important;
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
 
 .listing-title a:hover {
-  color: lighten($brand-blue, 15%);
+  color: lighten($brand-blue, 15%) !important;
   text-decoration: underline;
 }
 
@@ -55,7 +54,7 @@ $link-color: rgb(39, 128, 227);
 .listing-description {
   font-size: 0.75rem;
   line-height: 1.3;
-  color: $brand-sage-green;
+  color: $brand-sage-green !important;
   margin-bottom: 0.5rem;
 }
 
@@ -106,7 +105,7 @@ $link-color: rgb(39, 128, 227);
   height: 80px !important;
   width: 80px !important;
   max-width: 80px !important;
-  margin: 0 auto !important;
+  margin: 5px auto !important;
   display: block !important;
 }
 
@@ -146,6 +145,19 @@ $link-color: rgb(39, 128, 227);
     width: 50px !important;
     max-width: 50px !important;
   }
+}
+
+/* =================================== */
+/* Standardized headings for dark mode */
+/* =================================== */
+h1, h2 {
+  color: $brand-sage-green !important;
+  font-size: 1.2rem !important;
+}
+
+h3, h4, h5, h6 {
+  color: $brand-sage-green !important;
+  font-size: 1.2rem !important;
 }
 
 /* =================================== */
@@ -209,7 +221,7 @@ $link-color: rgb(39, 128, 227);
 }
 
 .pub-doi a {
-  color: #2563eb;
+  color: $brand-blue;
   text-decoration: none;
   font-weight: 500;
 }
@@ -352,21 +364,25 @@ $link-color: rgb(39, 128, 227);
 /* GENERAL TYPOGRAPHY                  */
 /* =================================== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1.2rem !important;        /* Same size for all headings */
+  line-height: 1.3 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
 }
 
 /* Page titles */
 h1.title {
-  color: $brand-sage-green;
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+  color: $brand-sage-green !important;
+  font-size: 1.8rem !important;
+  margin-bottom: 1rem !important;
 }
 
 /* Section headings */
 h2 {
-  color: $brand-blue;
-  font-size: 1.5rem;
+  color: $brand-blue;  
+  font-size: 1.3rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
