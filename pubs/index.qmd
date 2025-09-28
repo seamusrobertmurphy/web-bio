@@ -3,190 +3,152 @@ title: "Publications"
 page-layout: article
 ---
 
-```{r setup}
-#| warning: false
-#| message: false
-#| error: false
-#| include: false
-#| echo: false
-easypackages::packages(
-  "animation", "animate",
-  "extrafont", "ggplot2", "htmltools",
-  "janitor", "jsonlite", "lattice", "kableExtra", "kernlab",
-  "knitr","pandoc", "plotly", "RColorBrewer",
-  "rmarkdown", "tibble", "tidymodels", "tidyverse",
-  "tinytex", "tune", "useful", "webshot", "webshot2",
-  prompt = F
-  )
-  
-knitr::opts_chunk$set(
-  echo    = FALSE, 
-  message = FALSE, 
-  warning = FALSE,
-  error   = FALSE, 
-  cache   = FALSE,
-  comment = NA, 
-  tidy.opts = list(width.cutoff = 60)
-)
-options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
-sf::sf_use_s2(use_s2 = FALSE)
-```
 
 ```{css}
+/* Publications page specific styles */
 .publication-entry {
-  margin-bottom: 1.2rem;
-  padding: 0.8rem;
-  border-left: 3px solid #2563eb;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  border-left: 4px solid #2563eb;
   background: #f8fafc;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.publication-entry:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .pub-citation {
-  font-size: 0.85rem;
-  line-height: 1.3;
-  margin: 0;
-  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #374151;
 }
 
 .pub-title {
   font-weight: 600;
   color: #1f2937;
-  margin: 0;
-  padding: 0;
-  display: inline;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
-.pub-authors {
-  color: #4b5563;
-  font-size: 0.8rem;
-  margin: 0;
-  padding: 0;
-  display: inline;
+.pub-meta {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
 
 .pub-journal {
   font-style: italic;
   color: #4b5563;
-  margin: 0;
-  padding: 0;
-  display: inline;
+  font-weight: 500;
 }
 
 .pub-doi {
-  font-size: 0.75rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0;
-  padding: 0;
-  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
 }
 
 .pub-doi a {
   color: #2563eb;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .pub-doi a:hover {
   text-decoration: underline;
+  color: #1d4ed8;
 }
 
 .section-header {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #10b981;
-  margin: 2rem 0 1rem 0;
+  margin: 3rem 0 2rem 0;
   border-bottom: 2px solid #10b981;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.75rem;
+  font-family: "Open Sans", sans-serif;
 }
 
-/* Override any global spacing that might interfere */
-.publication-entry * {
-  line-height: inherit;
-}
-
-.publication-entry br {
-  line-height: 0;
-}
-
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .publication-entry {
-    padding: 0.6rem;
-    margin-bottom: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
   }
   
-  .pub-citation {
+  .pub-title {
+    font-size: 0.95rem;
+  }
+  
+  .pub-meta {
     font-size: 0.8rem;
+  }
+  
+  .section-header {
+    font-size: 1.2rem;
+    margin: 2rem 0 1.5rem 0;
   }
 }
 ```
 
-
 <div class="section-header">Peer-Reviewed Publications</div>
 
 <div class="publication-entry">
-<div class="pub-citation">
-<span class="pub-title">A gendered conjoint analysis of tilapia trait preference rankings among urban consumers in Zambia: Evidence to inform genetic improvement programs.</span><br>
-<span class="pub-authors">Murphy, S., Cole, S. M., Kaminski, A. M., Charo-Karisa, H., Basiita, R. K., McDougall, C., et al.</span> (2024). <span class="pub-journal">Aquaculture</span>, <em>574</em>, 741110.
-<div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2024.741110" target="_blank">10.1016/j.aquaculture.2024.741110</a></div>
-</div>
+  <div class="pub-title">A gendered conjoint analysis of tilapia trait preference rankings among urban consumers in Zambia: Evidence to inform genetic improvement programs.</div>
+  <div class="pub-meta">Murphy, S., Cole, S. M., Kaminski, A. M., Charo-Karisa, H., Basiita, R. K., McDougall, C., et al. (2024). <span class="pub-journal">Aquaculture</span>, 574, 741110.</div>
+  <div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2024.741110" target="_blank">10.1016/j.aquaculture.2024.741110</a></div>
 </div>
 
 <div class="publication-entry">
-<div class="pub-citation">
-<span class="pub-title">Understanding gendered trait preferences: Implications for client-responsive breeding programs.</span><br>
-<span class="pub-authors">McDougall, C., Kariuki, J., Lenjiso, B. M., Pricilla, M., Mehar, M., Murphy, S., et al.</span> (2022). <span class="pub-journal">PLOS Sustainability and Transformation</span>, <em>1</em>(8), e0000025.
-<div class="pub-doi">DOI: <a href="https://doi.org/10.1371/journal.pstr.0000025" target="_blank">10.1371/journal.pstr.0000025</a></div>
-</div>
+  <div class="pub-title">Understanding gendered trait preferences: Implications for client-responsive breeding programs.</div>
+  <div class="pub-meta">McDougall, C., Kariuki, J., Lenjiso, B. M., Pricilla, M., Mehar, M., Murphy, S., et al. (2022). <span class="pub-journal">PLOS Sustainability and Transformation</span>, 1(8), e0000025.</div>
+  <div class="pub-doi">DOI: <a href="https://doi.org/10.1371/journal.pstr.0000025" target="_blank">10.1371/journal.pstr.0000025</a></div>
 </div>
 
 <div class="publication-entry">
-<div class="pub-citation">
-<span class="pub-title">Selective breeding trait preferences for farmed tilapia among low-income women and men consumers in Egypt: Implications for pro-poor and gender-responsive fish breeding programmes.</span><br>
-<span class="pub-authors">Murphy, S., Charo-Karisa, H., Rajaratnam, S., Cole, S. M., McDougall, C., et al.</span> (2020). <span class="pub-journal">Aquaculture</span>, <em>525</em>, 735042.
-<div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2020.735042" target="_blank">10.1016/j.aquaculture.2020.735042</a></div>
-</div>
+  <div class="pub-title">Selective breeding trait preferences for farmed tilapia among low-income women and men consumers in Egypt: Implications for pro-poor and gender-responsive fish breeding programmes.</div>
+  <div class="pub-meta">Murphy, S., Charo-Karisa, H., Rajaratnam, S., Cole, S. M., McDougall, C., et al. (2020). <span class="pub-journal">Aquaculture</span>, 525, 735042.</div>
+  <div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2020.735042" target="_blank">10.1016/j.aquaculture.2020.735042</a></div>
 </div>
 
 <div class="publication-entry">
-<div class="pub-citation">
-<span class="pub-title">Gender-based market constraints to informal fish retailing: Evidence from analysis of variance and linear regression.</span><br>
-<span class="pub-authors">Murphy, S., Arora, D., Kruijssen, F., McDougall, C., & Kantor, P.</span> (2020). <span class="pub-journal">PLOS ONE</span>, <em>15</em>(3), e0229286.
-<div class="pub-doi">DOI: <a href="https://doi.org/10.1371/journal.pone.0229286" target="_blank">10.1371/journal.pone.0229286</a></div>
-</div>
+  <div class="pub-title">Gender-based market constraints to informal fish retailing: Evidence from analysis of variance and linear regression.</div>
+  <div class="pub-meta">Murphy, S., Arora, D., Kruijssen, F., McDougall, C., & Kantor, P. (2020). <span class="pub-journal">PLOS ONE</span>, 15(3), e0229286.</div>
+  <div class="pub-doi">DOI: <a href="https://doi.org/10.1371/journal.pone.0229286" target="_blank">10.1371/journal.pone.0229286</a></div>
 </div>
 
 <div class="publication-entry">
-<div class="pub-citation">
-<span class="pub-title">Employment generation in the Egyptian aquaculture value chain: Implications for meeting the Sustainable Development Goals (SDGs).</span><br>
-<span class="pub-authors">Nasr-Allah, A., Gasparatos, A., Karanja, A., Dompreh, E., Murphy, S., et al.</span> (2020). <span class="pub-journal">Aquaculture</span>, <em>520</em>, 734940.
-<div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2020.734940" target="_blank">10.1016/j.aquaculture.2020.734940</a></div>
-</div>
+  <div class="pub-title">Employment generation in the Egyptian aquaculture value chain: Implications for meeting the Sustainable Development Goals (SDGs).</div>
+  <div class="pub-meta">Nasr-Allah, A., Gasparatos, A., Karanja, A., Dompreh, E., Murphy, S., et al. (2020). <span class="pub-journal">Aquaculture</span>, 520, 734940.</div>
+  <div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.aquaculture.2020.734940" target="_blank">10.1016/j.aquaculture.2020.734940</a></div>
 </div>
 
 <div class="section-header">Book Chapters</div>
 
 <div class="publication-entry">
-<div class="pub-citation">
-<span class="pub-title">Fish farmers' perceptions, impacts and adaptation on/of/to climate change in Africa: The case of Egypt and Nigeria.</span><br>
-<span class="pub-authors">Adeleke, M. L., Kenawy, D., Nasr-Allah, A., Murphy, S., El-Naggar, G., & Dickson, M.</span> (2018). In F. Alves et al. (Eds.), <span class="pub-journal">Theory and Practice of Climate Adaptation</span> (pp. 269–295). Springer.
-<div class="pub-doi">DOI: <a href="https://doi.org/10.1007/978-3-319-72874-2_16" target="_blank">10.1007/978-3-319-72874-2_16</a></div>
-</div>
+  <div class="pub-title">Fish farmers' perceptions, impacts and adaptation on/of/to climate change in Africa: The case of Egypt and Nigeria.</div>
+  <div class="pub-meta">Adeleke, M. L., Kenawy, D., Nasr-Allah, A., Murphy, S., El-Naggar, G., & Dickson, M. (2018). In F. Alves et al. (Eds.), <span class="pub-journal">Theory and Practice of Climate Adaptation</span> (pp. 269–295). Springer.</div>
+  <div class="pub-doi">DOI: <a href="https://doi.org/10.1007/978-3-319-72874-2_16" target="_blank">10.1007/978-3-319-72874-2_16</a></div>
 </div>
 
 <div class="section-header">Reports</div>
 
 <div class="publication-entry">
-<div class="pub-citation">
-<span class="pub-title">Improving the livelihoods and wellbeing of women fish retailers: Success stories from the STREAMS Project in Egypt.</span><br>
-<span class="pub-authors">El Azzazy, M., Murphy, S., Nasr-Allah, A., Charo-Karisa, H., Mahmoud, M., & El-Gabaly, D.</span> (2018). WorldFish.
-<div class="pub-doi">URL: <a href="https://hdl.handle.net/20.500.12348/1751" target="_blank">hdl.handle.net/20.500.12348/1751</a></div>
-</div>
+  <div class="pub-title">Improving the livelihoods and wellbeing of women fish retailers: Success stories from the STREAMS Project in Egypt.</div>
+  <div class="pub-meta">El Azzazy, M., Murphy, S., Nasr-Allah, A., Charo-Karisa, H., Mahmoud, M., & El-Gabaly, D. (2018). WorldFish.</div>
+  <div class="pub-doi">URL: <a href="https://hdl.handle.net/20.500.12348/1751" target="_blank">hdl.handle.net/20.500.12348/1751</a></div>
 </div>
 
 <div class="publication-entry">
-<div class="pub-citation">
-<span class="pub-title">Tanzanian livestock modernization initiative: Preliminary report 2015.</span><br>
-<span class="pub-authors">Kaush, A., Cleaveland, S., Omore, A., & Murphy, S.</span> (2015). CGIAR Repository, 1–38.
-<div class="pub-doi">URL: <a href="https://cgspace.cgiar.org/handle/10568/67749" target="_blank">cgspace.cgiar.org/handle/10568/67749</a></div>
+  <div class="pub-title">Tanzanian livestock modernization initiative: Preliminary report 2015.</div>
+  <div class="pub-meta">Kaush, A., Cleaveland, S., Omore, A., & Murphy, S. (2015). CGIAR Repository, 1–38.</div>
+  <div class="pub-doi">URL: <a href="https://cgspace.cgiar.org/handle/10568/67749" target="_blank">cgspace.cgiar.org/handle/10568/67749</a></div>
 </div>
-</div>
+
