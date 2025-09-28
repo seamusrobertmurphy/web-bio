@@ -96,20 +96,22 @@ $link-color: rgb(39, 128, 227);
 
 .listing-image img {
   width: 100% !important;
-  height: 120px !important;
   object-fit: cover !important;
   border-radius: 0.25rem;
 }
 
-/* Grid layout adjustments */
+/* Grid layout adjustments - smaller, centered images */
 .quarto-listing-grid .listing-image img {
-  height: 100px !important;
+  height: 120px !important;
+  max-width: 200px !important;
+  margin: 0 auto !important;
+  display: block !important;
 }
 
-/* Default listing layout adjustments */
+/* Default listing layout adjustments - side-by-side layout */
 .quarto-listing-default .listing-image img {
-  height: 80px !important;
-  width: 120px !important;
+  height: 150px !important;
+  width: 200px !important;
   float: left;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
