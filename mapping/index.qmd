@@ -8,7 +8,7 @@ listing:
   fields: [image, date, title, description]
   field-display-names:
     date: "Updated"
-  image-height: 60px
+  image-height: 120px
 page-layout: full
 ---
 
