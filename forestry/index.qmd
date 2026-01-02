@@ -1,8 +1,8 @@
 ---
-title: "Verification"
+title: "Forestry"
 listing:
-  contents: verification.yml
-  type: grid
+  contents: forestry.yml
+  type: default
   grid-columns: 3
   sort: "date asc"
   fields: [image, date, title, description]
@@ -21,7 +21,6 @@ img {
 }
 </style>
 
-::: {#verification}
+::: {#forestry}
 :::
 
-This page showcases verification tools and methodologies I've developed for carbon offset project assessment and compliance.

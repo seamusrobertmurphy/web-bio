@@ -110,7 +110,7 @@ defaults:
       
       /* Dark theme text colors */
       .listing-description {
-        color: $brand-grey !important;
+        color: $brand-off-white !important;
       }
       
       .listing-author {

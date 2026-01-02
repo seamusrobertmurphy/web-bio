@@ -75,3 +75,6 @@ defaults:
         color: lighten($brand-blue, 15%) !important;
         text-decoration: underline;
       }
+      .listing-description {
+        color: #374151 !important;
+      }

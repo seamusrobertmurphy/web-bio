@@ -15,3 +15,29 @@
   image: https://seamusrobertmurphy.github.io/VM0010-starter-template/assets/dataMaid_dataset_tidy.png
   description: "Reporting template for Improved Forest Management (IFM) projects under VM0010 methodology. Provides standardized procedures for forest inventory data collection, carbon stock calculations, emission reduction quantification, and MRV reporting requirements. Includes field measurement protocols, allometric equation selection guidance, statistical sampling design, and automated calculation templates ensuring VCS compliance for commercial forest carbon projects."
   date: 2024-11-04
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">VT0007:</span> JREDD+ Risk Mapping'
+  date: 2024-11-06
+  path: https://seamusrobertmurphy.quarto.pub/vt0007/
+  image: ../assets/PNG/VT0007-icon-z.png
+  description: "Risk assessment toolkit for Jurisdictional REDD+ programs implementing VT0007 methodology. Features geospatial analysis scripts for identifying and mapping deforestation risk factors, including proximity to infrastructure, agricultural pressure zones, and historical forest loss patterns. Integrates multiple satellite data sources (Landsat, Sentinel-2, MODIS) with socioeconomic indicators to generate probabilistic risk surfaces supporting strategic intervention planning and monitoring system design for jurisdictional-scale forest conservation programs."
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">ART-TREES:</span> Allometry Validation'
+  date: 2025-02-16
+  description: "Validation and calibration procedures for allometric biomass models compliant with ART-TREES requirements. Technical guidance in model selection methodology for avoiding Types 1-4 statistical errors, bias corrections and hyperparameter tuning."
+  path: https://seamusrobertmurphy.quarto.pub/art-trees-allometry-validation
+  image: ../assets/PNG/ART-TREES-allometry.png  
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">ART-TREES:</span> Monte Carlo Tools'
+  date: 2024-12-19
+  description: "Monte Carlo simulation methods for estimating uncertainty of REDD+ emission factors and activity data in compliance with ART-TREES Standard V2.0. Features workflows for biomass estimation uncertainty analysis, allometric model error propagation, and activity data variance assessment using 10,000-iteration simulations with 90% confidence intervals. Includes specialized modules for cross-validation bias detection, spatial uncertainty modeling, and automated uncertainty deduction calculations that also incorporate best practices from CEOS LPV Biomass Protocol."
+  path: https://rpubs.com/seamusmurphy/art-trees-monte-carlo-uncertainty
+  image: https://raw.githubusercontent.com/seamusrobertmurphy/monte-carlo-trees/refs/heads/main/animation.gif
+
+- title: '<span style="color: rgb(96, 165, 250); font-weight: 600;">ART-TREES:</span> Demo Repository'
+  date: 2025-08-11
+  description: "Git Control for Reproducible GHG Calculations."
+  path: https://seamusrobertmurphy.quarto.pub/art-trees-submission/
+  description: "Demonstration repository showcasing version control best practices for greenhouse gas calculation workflows under ART-TREES methodology. Features standardized Git workflows, automated testing frameworks, and documentation templates ensuring reproducible carbon accounting processes. Includes branching strategies for collaborative development, continuous integration pipelines for calculation validation, and release management procedures supporting transparent and auditable REDD+ project development."
+  image: ../assets/PNG/ART-TREES-repo-layout.png  
+

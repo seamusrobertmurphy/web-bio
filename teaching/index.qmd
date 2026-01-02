@@ -4,7 +4,15 @@ listing:
   id: teaching
   contents: teaching.yml
   type: default
+page-layout: full
 ---
+
+<style>
+img {
+  max-width: 200px !important;
+  max-height: 200px !important;
+}
+</style>
 
 ::: {#teaching}
 :::

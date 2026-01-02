@@ -16,8 +16,8 @@ website:
     right:
       - teaching/index.qmd
       - lidar/index.qmd
-      - mapping/index.qmd
       - verification/index.qmd
+      - mapping/index.qmd
       - projects/index.qmd
       - pubs/index.qmd
     tools:
@@ -27,7 +27,10 @@ website:
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com/in/seamusrobertmurphy
-
+    - icon: file-earmark-pdf
+      text: Resume
+      href: https://drive.google.com/file/d/13YLhsRCAMMHQw-jd2SJdaRJH9udBGytP/preview
+  
 brand:
   light: _brand-light.yml
   dark: _brand.yml

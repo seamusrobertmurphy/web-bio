@@ -1,18 +1,10 @@
 [
   {
-    "listing": "/verification/index.html",
+    "listing": "/forestry/index.html",
     "items": []
   },
   {
-    "listing": "/projects/index.html",
-    "items": []
-  },
-  {
-    "listing": "/mapping/index.html",
-    "items": []
-  },
-  {
-    "listing": "/workshops/index.html",
+    "listing": "/lidar/index.html",
     "items": []
   },
   {
@@ -20,7 +12,19 @@
     "items": []
   },
   {
-    "listing": "/lidar/index.html",
+    "listing": "/workshops/index.html",
+    "items": []
+  },
+  {
+    "listing": "/mapping/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": []
+  },
+  {
+    "listing": "/verification/index.html",
     "items": []
   },
   {
